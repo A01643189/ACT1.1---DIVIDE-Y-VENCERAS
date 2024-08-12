@@ -10,9 +10,8 @@ int main() {
 
     for (int i = 0; i < length; i++) {
         std::cout << list[i] << " ";
-    }
 
-    std::cout << "Ordered list" << std::endl;
+    std::cout << std::endl << "Ordered list" << std::endl;
 
     for (int i = 0; i < length; i++) {
         std::cout << list[i] << " ";
