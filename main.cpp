@@ -1,6 +1,11 @@
 #include <iostream>
 #include <vector>
 
+// Francisco Javier Romo Juárez A01643189
+// Diego Enrique Vargas Ramírez A01635782
+
+//Merge
+
 std::vector<int> merge(std::vector<int> left, std::vector<int> right) {
     std::vector<int> result;
     int i = 0;
@@ -29,6 +34,8 @@ std::vector<int> merge(std::vector<int> left, std::vector<int> right) {
     return result;
 }
 
+//Merge Sort
+
 std::vector<int> mergeSort(std::vector<int> list) {
     if (list.size() <= 1) {
         return list;
@@ -52,7 +59,7 @@ std::vector<int> mergeSort(std::vector<int> list) {
     return merge(left, right);
 }
 
-
+//Main
 
 int main() {
     std::cout << "Merge Sort" << std::endl;
