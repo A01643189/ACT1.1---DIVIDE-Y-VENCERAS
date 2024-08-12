@@ -6,8 +6,8 @@
 
 //Merge
 
-std::vector<int> merge(std::vector<int> left, std::vector<int> right) {
-    std::vector<int> result;
+std::vector<double> merge(std::vector<double> left, std::vector<double> right) {
+    std::vector<double> result;
     int i = 0;
     int j = 0;
 
@@ -36,14 +36,14 @@ std::vector<int> merge(std::vector<int> left, std::vector<int> right) {
 
 //Merge Sort
 
-std::vector<int> mergeSort(std::vector<int> list) {
+std::vector<double> mergeSort(std::vector<double> list) {
     if (list.size() <= 1) {
         return list;
     }
 
     int middle = list.size() / 2;
-    std::vector<int> left;
-    std::vector<int> right;
+    std::vector<double> left;
+    std::vector<double> right;
 
     for (int i = 0; i < middle; i++) {
         left.push_back(list[i]);
@@ -63,10 +63,21 @@ std::vector<int> mergeSort(std::vector<int> list) {
 
 int main() {
     std::cout << "Merge Sort" << std::endl;
-    std::vector<int> list = {12, 11, 13, 5, 6, 7, 2, 3, 1, 4, 23, 15, };
-    int length = list.size();
+    std::vector<double> list = {};
+    int length;
 
-    std::cout << "Unordered list" << std::endl;
+    std::cout << "Enter the length of the list" << std::endl;
+    std::cin >> length;
+
+    std::cout << "Enter the numbers of the list" << std::endl;
+
+    for (int i = 0; i < length; i++) {
+        double number;
+        std::cin >> number;
+        list.push_back(number);
+    }
+
+    std::cout << "Unordered list" << std::endl; 
 
     for (int i = 0; i < length; i++) {
         std::cout << list[i] << " ";
